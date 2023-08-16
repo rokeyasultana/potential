@@ -73,7 +73,7 @@ body{
     background-color: #5D48E0;
   }
   
-
+/* banner */
 .banner{
     background: url(/images/background.png);
     height:480px;
@@ -162,7 +162,6 @@ body{
     margin-bottom: 20px;
     text-align: left;
     font-weight: 100;
-    
   }
 
   .column1 p {
@@ -175,8 +174,6 @@ body{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-top: -80px;
-   
-    
   }
 
   .card {
@@ -186,8 +183,280 @@ body{
     box-shadow: 5px 5px 5px #e2def8;
     transform: rotate(-7.99deg);
     height: 180px;
- 
   }
+
+/* comparison */
+.comparison{
+  background-color: #ffffff;
+}
+.comparison-title{
+text-align: center;
+line-height: 95%;
+font-size: 40px;
+}
+.comparison p{
+  text-align: center;
+}
+
+.custom-table {
+  table-layout: fixed;
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px; /* Adding border radius */
+  overflow: hidden;
+  box-shadow:10px 10px 10px 10px rgb(251, 249, 255);
+}
+
+.custom-table th, .custom-table td {
+  border-left:1px solid rgb(201, 199, 199);
+  border-top:1px solid gray ;
+  padding: 10px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 12px;
+}
+.custom-table th:first-child,
+.custom-table td:first-child {
+    border-left: none; /* Remove left border for the first cell in each row */
+}
+.custom-table th {
+  background-color: #5D48E0;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.check-mark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #d5cffe;
+  color: #5D48E0;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.time{
+  margin-top: 40px;
+}
+
+.time p{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 16px;
+}
+.time span{
+  font-weight: 700;
+}
+
+/* service */
+.service-title{
+text-align: center;
+font-size: 40px;
+}
+
+.service-description{
+  text-align: center;
+  line-height: 60%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:0 auto ;
+  width: 70%;
+  margin-top: 40px;
+}
+
+.custom-card {
+  width: calc(33.33% - 20px); /* Three cards in a row with margin */
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 280px;
+}
+
+.custom-card img {
+  width: 20%;
+  max-height: 150px;
+  object-fit: cover;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.card-description{
+  font-size: 13px;
+  height: 20px; /* Set a fixed height for the description paragraph */
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content {
+  padding: 5px;
+}
+
+.card-title {
+  margin-top: 0;
+}
+.card-2{
+  background-color: #5D48E0;
+  color: white;
+}
+.card-2 img{
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+  height: 45px;
+  width: 40px;
+}
+.check2{
+color: white;
+}
+
+.check {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #5D48E0;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+      width: calc(50% - 20px); /* Two cards in a row with margin */
+  }
+}
+
+
+
+/* portfolio */
+.portfolio {
+  background: url(/images/bg-portfolio.png);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+.portfolio-title {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.portfolio-description {
+  text-align: center;
+  margin-top: -30px;
+  color: #b5b2b2;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  place-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: -10px;
+  gap:50px;
+}
+
+.image-container img {
+  height: 240px;
+
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.slider-title{
+  font-size: 20px;
+}
+.slider h2{
+  margin-top: -10px;
+}
+.slider h3{
+  margin-top: -10px;
+}
+.slider p{
+    font-size: 12px;
+}
+
+.slider-content {
+  padding: 10px;
+}
+
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #686767;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    place-items: center;
+    padding-top: 50px;
+  }
+
+  .portfolio {
+    background:none;
+    color: rgb(0, 0, 0);
+    
+  }
+  .image-container img {
+   display: none;
+  
+  }
+  .slider-container {
+    overflow: hidden;
+    margin-top: -50px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #030303;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #6f67f9;
+  }
+}
+
 
  /* our blog */
  .blog-section {
@@ -198,7 +467,7 @@ body{
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 10px;
 
 }
@@ -264,6 +533,8 @@ body{
   margin-left: 200px;
   margin-right: 200px;
   border-radius: 10px;
+  margin-top: 30px;
+ 
 }
 
 .contact-content {
@@ -277,7 +548,7 @@ body{
 
 .contact-content h3 {
   color: white;
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
   line-height: 70%;
 }
@@ -293,5 +564,66 @@ body{
 }
 
 .contact-button:hover {
-  background-color: #0056b3;
+  background-color: hsl(211, 100%, 35%);
 }
+
+/* footer */
+.footer {
+  background-color: #050042;
+  color: white;
+  padding: 20px 0;
+ 
+}
+
+.all_Column {  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  place-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer-column{
+  height: 200px;
+  width: 100px;
+}
+
+.footer-column h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 40px; /* Set a fixed height for all h4 tags */
+}
+
+.footer-column img{
+  width: 90px;
+  height: 20px;
+  margin-top: 23px;
+}
+
+
+.footer-column p {
+  font-size: 12px;
+  margin-top:13px ;
+
+}
+.web{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  margin-left: 140px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+.footer_text{
+  border-top: 1px solid gray;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    width: 50%;
+  }
+}
+
